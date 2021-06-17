@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+/* Reset */
+* {
+    color: #222;
+    /* 기본텍스트 색상 */
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    /* 배경색 */
+}
+
+a:link {
+    /* 슈도(Pseudo, 의사, 짝퉁) 클래스 선택자*/
+    color: #333;
+}
+
+a:visited {
+    color: #333;
+}
+
+a:hover {
+    color: #444;
+}
+
+a:active {
+    color: #444;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+/* Reset */
+
+
+/* 가이드 라인 (Guide Line, 안내선) */
+
+/*
+div#wrap {
+    border: 1px solid #000;
+}
+*/
+
+/*div#headerFrame {
+    border: 1px solid #08f;
+}*/
+/*header#header {
+    border: 1px solid #f80;
+}*/
+/*
+div#slide {
+    border: 1px solid #000;
+}
+
+div#contents {
+    border: 1px solid #000;
+}
+
+footer#footer {
+    border: 1px solid #000;
+}
+*/
+
+/* 가이드 라인 (Guide Line, 안내선) */
+
+
+
+/* div#wrap */
+div#wrap {
+    width: 1200px;
+/*    border: 1px solid #f00;*/
+    margin: 0 auto;
+}
+
+/* div#wrap */
+
+
+
+/* header#header */
+div#headerFrame {
+    background-color: #0076be;
+}
+
+header#header {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+div#headerLogo {
+    height: 100px;
+    line-height: 100px;
+}
+
+
+/* nav#gnb */
+nav#gnb {
+    /*border: 1px solid #000;*/
+
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+
+#gnb ul#mainMenu {
+    height: 100px;
+    padding-right: 20px;
+    /*border: 1px solid #0f0;*/
+
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+#gnb a {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    /*border: 1px solid #f00;*/
+    display: inline-block;
+
+    background-color: #b3d6ec;
+}
+
+/* nav#gnb */
+
+
+
+/* header#header */
+
+
+
+/* div#slide */
+div#slide {
+    position: relative;
+}
+
+div#slide span {
+    color: #444;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 26px;
+    padding: 20px;
+    /*border: 1px solid #000;*/
+    border-radius: 20px;
+
+    background-color: rgba(255, 255, 255, 0.78);
+
+    display: inline-block;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* div#slide */
+
+
+
+
+/* div#contents */
+div#contents {
+    height: 200px;
+
+    -webkit-flex: ;
+    -moz-flex: ;
+    -ms-flex: ;
+    -o-flex: ;
+    flex: ;
+}
+
+/* div#contents */
+#contents > * {
+    width: 400px;
+    /*    border: 1px solid #f00;*/
+}
+
+div#bbs {
+    padding: 10px;
+    /*table 설정*/
+}
+
+#bbs > * {
+    border: 1px solid #aaa;
+}
+
+#bbs > button.taBtn {
+    font-size: 19px;
+    padding: 2px 8px;
+    position: relative;
+    top: 1px;
+}
+
+#bbs > button:first-child {
+    border-bottom-color: #eee;
+    margin-left: 20px;
+    left: 6px;
+}
+
+#bbs > button:nth-child(2) {
+    border-color: #eee;
+    border-bottom-color: #aaa;
+}
+
+#bbs > div {
+    padding: 10px;
+}
+
+#bbs > div > table td {
+    font-size: 14px;
+    padding-bottom: 18px;
+}
+
+#bbs > div > table td:first-child {
+    padding-right: 35px;
+}
+
+/*img 1~2*/
+#contents img {
+    width: 170px;
+}
+
+#contents > div:not(:first-child) {
+/*        height: 200px;*/
+    text-align: center;
+    line-height: 200px;
+}
+/* footer#footer */
+div#footerFrame {
+    background-color: #0076be;
+}
+footer#footer {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#footer>div#footerLogo {
+    height: 100px;
+    line-height: 100px;
+}
+
+#footer>div#companyInfo {
+    /*border: 1px solid #f00;*/
+
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+#companyInfo>* {
+    height: 50px;
+    /*border: 1px solid #000;*/
+}
+
+#companyInfo ul#footerMainmenu {
+    height: 50px;
+    /*border: 1px solid #0f0;   */
+    justify-content: center;
+    align-items: center;
+}
+#companyInfo li.footerMainLi {
+    padding: 0 30px;
+    /*border: 1px solid #000;*/
+}
+
+#companyInfo div#copy {
+    text-align: center;
+    line-height: 50px;
+}
+/* footer#footer */
